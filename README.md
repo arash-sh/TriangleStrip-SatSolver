@@ -1,6 +1,6 @@
 # TriangleStrip-SatSolver
 
-This code find a triangle strip for a given triangle mesh, if such a strip exits. The strip specifies a sequence of all the triangles in the mesh, where every triangle appears exactly once. In other words, the entire mesh is covered, while no triangle is repeated. This problem is equivalent to finding a Hamiltonian path in the dual graph [[1]](#1). The code was created for the Theory of Computation (CS517) class to evaluate the computation time of SAT solvers as the problem size grows. 
+This code finds a triangle strip for a given triangle mesh, if such a strip exists. The strip specifies a sequence of all the triangles in the mesh, where every triangle appears exactly once. In other words, the entire mesh is covered, while no triangle is repeated. This problem is equivalent to finding a Hamiltonian path in the dual graph [[1]](#1). The code was created for the Theory of Computation class (CS517) to evaluate the computation time of SAT solvers as the problem size grows. 
 
 The problem is converted to a satisfiability (SAT) problem by creating the conjunctive normal form (CNF) of the dual graph. An explanation of this process can be found in [[2]](#2). The SAT problem is then solved with an off-the-shelf SAT solver ( Glucose3).
 
